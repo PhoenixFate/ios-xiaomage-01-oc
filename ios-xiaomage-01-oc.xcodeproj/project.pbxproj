@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D0118BC423FE799800E8E6DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D0118BC323FE799800E8E6DE /* main.m */; };
+		D0118BD123FE7AD700E8E6DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D0118BD023FE7AD700E8E6DE /* main.m */; };
+		D0118BD723FE9D1700E8E6DE /* test.c in Sources */ = {isa = PBXBuildFile; fileRef = D0118BD623FE9D1700E8E6DE /* test.c */; };
+		D01A381223FED33800162DE4 /* firstClass.m in Sources */ = {isa = PBXBuildFile; fileRef = D01A381123FED33800162DE4 /* firstClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		D0118BBE23FE799800E8E6DE /* CopyFiles */ = {
+		D0118BCC23FE7AD700E8E6DE /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -23,12 +25,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		D0118BC023FE799800E8E6DE /* ios-xiaomage-01-oc */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "ios-xiaomage-01-oc"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D0118BC323FE799800E8E6DE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D0118BCE23FE7AD700E8E6DE /* day01 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = day01; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0118BD023FE7AD700E8E6DE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D0118BD523FE9D1700E8E6DE /* test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = test.h; sourceTree = "<group>"; };
+		D0118BD623FE9D1700E8E6DE /* test.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = test.c; sourceTree = "<group>"; };
+		D01A381123FED33800162DE4 /* firstClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = firstClass.m; sourceTree = "<group>"; };
+		D01A381323FED59300162DE4 /* firstClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = firstClass.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D0118BBD23FE799800E8E6DE /* Frameworks */ = {
+		D0118BCB23FE7AD700E8E6DE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,7 +47,7 @@
 		D0118BB723FE799800E8E6DE = {
 			isa = PBXGroup;
 			children = (
-				D0118BC223FE799800E8E6DE /* ios-xiaomage-01-oc */,
+				D0118BCF23FE7AD700E8E6DE /* day01 */,
 				D0118BC123FE799800E8E6DE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,37 +55,41 @@
 		D0118BC123FE799800E8E6DE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D0118BC023FE799800E8E6DE /* ios-xiaomage-01-oc */,
+				D0118BCE23FE7AD700E8E6DE /* day01 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D0118BC223FE799800E8E6DE /* ios-xiaomage-01-oc */ = {
+		D0118BCF23FE7AD700E8E6DE /* day01 */ = {
 			isa = PBXGroup;
 			children = (
-				D0118BC323FE799800E8E6DE /* main.m */,
+				D0118BD023FE7AD700E8E6DE /* main.m */,
+				D0118BD523FE9D1700E8E6DE /* test.h */,
+				D0118BD623FE9D1700E8E6DE /* test.c */,
+				D01A381123FED33800162DE4 /* firstClass.m */,
+				D01A381323FED59300162DE4 /* firstClass.h */,
 			);
-			path = "ios-xiaomage-01-oc";
+			path = day01;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D0118BBF23FE799800E8E6DE /* ios-xiaomage-01-oc */ = {
+		D0118BCD23FE7AD700E8E6DE /* day01 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D0118BC723FE799800E8E6DE /* Build configuration list for PBXNativeTarget "ios-xiaomage-01-oc" */;
+			buildConfigurationList = D0118BD223FE7AD700E8E6DE /* Build configuration list for PBXNativeTarget "day01" */;
 			buildPhases = (
-				D0118BBC23FE799800E8E6DE /* Sources */,
-				D0118BBD23FE799800E8E6DE /* Frameworks */,
-				D0118BBE23FE799800E8E6DE /* CopyFiles */,
+				D0118BCA23FE7AD700E8E6DE /* Sources */,
+				D0118BCB23FE7AD700E8E6DE /* Frameworks */,
+				D0118BCC23FE7AD700E8E6DE /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "ios-xiaomage-01-oc";
-			productName = "ios-xiaomage-01-oc";
-			productReference = D0118BC023FE799800E8E6DE /* ios-xiaomage-01-oc */;
+			name = day01;
+			productName = day01;
+			productReference = D0118BCE23FE7AD700E8E6DE /* day01 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -91,7 +101,7 @@
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Phoenix Fate";
 				TargetAttributes = {
-					D0118BBF23FE799800E8E6DE = {
+					D0118BCD23FE7AD700E8E6DE = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
 				};
@@ -109,17 +119,19 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D0118BBF23FE799800E8E6DE /* ios-xiaomage-01-oc */,
+				D0118BCD23FE7AD700E8E6DE /* day01 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D0118BBC23FE799800E8E6DE /* Sources */ = {
+		D0118BCA23FE7AD700E8E6DE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0118BC423FE799800E8E6DE /* main.m in Sources */,
+				D0118BD123FE7AD700E8E6DE /* main.m in Sources */,
+				D0118BD723FE9D1700E8E6DE /* test.c in Sources */,
+				D01A381223FED33800162DE4 /* firstClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,7 +247,7 @@
 			};
 			name = Release;
 		};
-		D0118BC823FE799800E8E6DE /* Debug */ = {
+		D0118BD323FE7AD700E8E6DE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -243,7 +255,7 @@
 			};
 			name = Debug;
 		};
-		D0118BC923FE799800E8E6DE /* Release */ = {
+		D0118BD423FE7AD700E8E6DE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -263,11 +275,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D0118BC723FE799800E8E6DE /* Build configuration list for PBXNativeTarget "ios-xiaomage-01-oc" */ = {
+		D0118BD223FE7AD700E8E6DE /* Build configuration list for PBXNativeTarget "day01" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D0118BC823FE799800E8E6DE /* Debug */,
-				D0118BC923FE799800E8E6DE /* Release */,
+				D0118BD323FE7AD700E8E6DE /* Debug */,
+				D0118BD423FE7AD700E8E6DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
