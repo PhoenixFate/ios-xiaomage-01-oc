@@ -1,13 +1,13 @@
 //
-//  firstClass.h
+//  FirstClass.h
 //  ios-xiaomage-01-oc
 //
 //  Created by Phoenix Fate on 2020/2/20.
 //  Copyright © 2020 Phoenix Fate. All rights reserved.
 //
 
-#ifndef firstClass_h
-#define firstClass_h
+#ifndef FirstClass_h
+#define FirstClass_h
 
 // 1.如何编写类的声明
 // 以@interface开头 , 以@end结尾, 然后再class name对应的地方写上 事物名称, 也就是类名即可
@@ -17,21 +17,69 @@
 // OC类声明中属性只能在写@interface和@end之间的{}中
 // 注意: 编写OC类属性的时, 建议将所有属性的名称前面都加上_
 
+enum MyColor
+{
+    BlackColor,
+    WhiteColor,
+    GlodenColor
+};
+
+typedef enum
+{
+    BlackColor2,
+    WhiteColor2,
+    GlodenColor2
+}MyColor2;
+
+
 
 // 类名后面的 :NSObject 是为了让我们的Iphone类具备创建对象的能力
 @interface IPhone : NSObject
 {
     //    注意: 默认情况下, OC对象中的属性是不能直接访问的
-    @public
+@public
     NSString *_model;
     int _cpu;
     double _size;
     NSString *_color;
-    
+    enum MyColor color1;
+    MyColor2 color2;
 }
+
+/*
+类方法和对象方法的区别
+0. 对象方法以-开头
+   类方法以+开头
+
+1. 对象方法必须用对象调用
+   类方法必须用类来调用
+
+2. 对象方法中可以直接访问属性(成员变量)
+   类方法中不可以直接访问属性(成员变量)
+
+3. 类方法和对象方法可以进行相互调用
+   4.1对象方法中可以直接调用类方法
+   4.2类方法中间接调用对象方法  (注意: 不建议这样使用)
+   4.3类方法中可以直接调用其它类方法
+   4.4对象方法中可以直接调用对象方法
+
+类方法的应用场景
+如果方法中没有使用到属性(成员变量), 那么能用类方法就用类方法
+类方法的执行效率比对象方法高
+
+类方法一般用于定义工具方法
+   字符串查找
+   文件操作
+   数据库操作
+*/
++(int)sumWithValue1 :(int)value1 andValue2: (int)value2;
++(NSString*)getColorName:(enum MyColor)mycolor;
+
+
 //类方法只能用类名调用, 对象方法只能用对象调用
 //OC中的类方法用+表示, OC中的对象方法用-表示
 +(void) test;
+-(void) hello;
 -(void) getInfo;
 // 有返回值有参数的, 打电话
 // int sendMessage(int number);
@@ -48,4 +96,4 @@
 -(int) sendMessage:(NSString*) phoneNumber andContent:(NSString*)content;
 @end
 
-#endif /* firstClass_h */
+#endif /* FirstClass_h */
