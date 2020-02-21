@@ -16,7 +16,8 @@
 
 //#import 既可以导入oc的头文件 又可以导入c的头文件
 #import "test.h"
-#import "firstClass.h"
+#import "FirstClass.h"
+#import "Person.h"
 /*
  #import 和#include一样
  import会自动防止重复导入
@@ -24,6 +25,16 @@
  #ifndef    XXX_STDIO_H_
  #define    XXX_STDIO_H_
  */
+
+
+// 写在函数和大括号外部的变量, 我们称之为全局变量
+// 作用域: 从定义的那一行开始, 一直到文件末尾
+// 局部变量可以先定义在初始化, 也可以定义的同时初始化
+// 存储: 静态区
+// 程序一启动就会分配存储空间, 直到程序结束才会释放
+int a;
+int b = 10;
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
@@ -62,8 +73,9 @@ int main(int argc, const char * argv[]) {
     iPhone->_cpu=5;
     iPhone->_size=6.2;
     iPhone->_model=@"iphone 6中文";
+    iPhone->color1=BlackColor;
     
-    NSLog(@"size =%f, color=%@, model=%@, cpu=%i",iPhone->_size,iPhone->_color,iPhone->_model,iPhone->_cpu);
+    NSLog(@"size =%f, color=%@, model=%@, cpu=%i, newColor=%u",iPhone->_size,iPhone->_color,iPhone->_model,iPhone->_cpu,iPhone->color1);
     
     // 如果给对象发消息(如果调用对象的方法)
     [iPhone getInfo];
@@ -71,5 +83,55 @@ int main(int argc, const char * argv[]) {
     [iPhone call:(@"10086")];
     [iPhone call:@"10005"];
     [iPhone sendMessage:@"10086" andContent:@"我想你了"];
+    
+    
+    int sum=[IPhone sumWithValue1:20 andValue2:50];
+    NSLog(@"sum is %d",sum);
+    
+    
+    
+    
+    
+    // 1.通过类创建对象
+    /*
+     1.开辟存储空间, 通过new方法创建对象会在堆 内存中开辟一块存储空间
+     2.初始化所有属性
+     3.返回指针地址
+     
+     创建对象的时候返回的地址其实就是类的第0个属性的地址
+     但是需要注意的是: 类的第0个属性并不是我们编写的_age, 而是一个叫做isa的属性
+     isa是一个指针, 占8个字节
+     
+     其实类也是一个对象, 也就意味着Person也是一个对象
+     平时我们所说的创建对象其实就是通过一个 类对象 来创建一个 新的对象
+     类对象是系统自动帮我们创建的, 里面保存了当前对象的所有方法
+     而实例对象是程序自己手动通过new来创建的, 而实例对象中有一个isa指针就指向了创建它的那个类对象
+     
+     */
+    
+    Person *p=[Person new];
+    [p walk];
+    [p sleep];
+    [p eat:@"汉堡包"];
+    
+    
+    
+    /*
+     常见错误
+     1.只有类的声明，没有类的实现
+     2.漏了@end
+     3. @interface和@implementation嵌套
+     4.成员变量没有写在括号里面
+     5.方法的声明写在了大括号里面
+     6.成员变量不能在{}中进行初始化、不能被直接拿出去访问
+     7.方法不能当做函数一样调用
+     8.OC方法只能声明在@interface和@end之间，只能实现在@implementation和@end之间。也就是说OC方法不能独立于类存在
+     9.C函数不属于类，跟类没有联系，C函数只归定义函数的文件所有
+     10.C函数不能访问OC对象的成员
+     11.低级错误：方法有声明，但是实现的时候写成了函数
+     12.OC可以没有@interface同样可以定义一个类
+     */
+    
+    
     return 0;
 }
