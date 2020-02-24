@@ -10,4 +10,10 @@
 
 @implementation Student
 
++ (void)initialize{
+    NSLog(@"Student initialize");
+}
++ (void)load{
+    NSLog(@"Student类被加载到内存中");
+}
 @end

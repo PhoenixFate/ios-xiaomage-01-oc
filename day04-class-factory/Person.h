@@ -25,6 +25,19 @@ NS_ASSUME_NONNULL_BEGIN
 + (instancetype)person;
 
 + (instancetype)personWithAge:(int)age;
+
++(void)test;
+
+
++(void)load;
+
++ (void)initialize;
+
+-(void)demo;
+
+-(void)demoWithNumber:(NSString*)number;
+
+-(void)demoWithNumber:(NSString *)number WithContent:(NSString*)content;
 @end
 
 NS_ASSUME_NONNULL_END
