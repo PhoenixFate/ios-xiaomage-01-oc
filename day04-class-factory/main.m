@@ -112,6 +112,9 @@ int main(int argc, const char * argv[]) {
     NSLog(@"-----------------SEL--------------");
     
     
+    Person *pp=[Person alloc];
+    NSLog(@"%d",pp.age);
+    
     
     
     return 0;
