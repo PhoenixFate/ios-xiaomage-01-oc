@@ -103,9 +103,17 @@ int main(int argc, const char * argv[]) {
         NSLog(@"--------------多对象的内存管理-----------");
     }
     
-    NSString *str1=@"hello";
-    [str1 release];
-    [str1 release];
-    [str1 release];
+    
+    NSLog(@"retainCount = %lu",[@"123" retainCount]);
+    
+    NSString *str1=[[NSString alloc]initWithString:@"bcd"];
+    NSLog(@"retainCount = %lu",[str1 retainCount]);
+
+    NSString *str2=[[NSString alloc]initWithFormat:@"bcddw"];
+    NSLog(@"retainCount = %lu",[str2 retainCount]);
+    
+    NSString *str3=[NSString stringWithFormat:@"ddd"];
+    NSLog(@"retainCount = %lu",[str3 retainCount]);
+    
     return 0;
 }
