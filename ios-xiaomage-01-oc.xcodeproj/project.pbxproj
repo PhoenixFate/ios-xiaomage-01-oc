@@ -44,6 +44,8 @@
 		D02D463824090C4E00D3873F /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = D02D463724090C4E00D3873F /* Person.m */; };
 		D02D463B24090CA900D3873F /* Person+sports.m in Sources */ = {isa = PBXBuildFile; fileRef = D02D463A24090CA900D3873F /* Person+sports.m */; };
 		D02D46432409165100D3873F /* NSString+count.m in Sources */ = {isa = PBXBuildFile; fileRef = D02D46422409165100D3873F /* NSString+count.m */; };
+		D0469974240D02BF00EA720A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D0469973240D02BF00EA720A /* main.m */; };
+		D046997F240D1D7F00EA720A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D046997E240D1D7F00EA720A /* main.m */; };
 		D0542C362407F18B00BA3581 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = D0542C352407F18B00BA3581 /* Car.m */; };
 		D0542C4D2407F9AC00BA3581 /* Author.m in Sources */ = {isa = PBXBuildFile; fileRef = D0542C482407F9AC00BA3581 /* Author.m */; };
 		D0542C4E2407F9AC00BA3581 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D0542C492407F9AC00BA3581 /* main.m */; };
@@ -170,6 +172,24 @@
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 		D02D462D24090C4600D3873F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		D046996F240D02BF00EA720A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		D046997A240D1D7F00EA720A /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -335,6 +355,10 @@
 		D02D463C2409137D00D3873F /* Person+PersonExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Person+PersonExtension.h"; sourceTree = "<group>"; };
 		D02D46412409165100D3873F /* NSString+count.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+count.h"; sourceTree = "<group>"; };
 		D02D46422409165100D3873F /* NSString+count.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+count.m"; sourceTree = "<group>"; };
+		D0469971240D02BF00EA720A /* day08-dictionary */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "day08-dictionary"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0469973240D02BF00EA720A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D046997C240D1D7F00EA720A /* day08-common */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "day08-common"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D046997E240D1D7F00EA720A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D0542C342407F18B00BA3581 /* Car.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
 		D0542C352407F18B00BA3581 /* Car.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
 		D0542C3B2407F8C800BA3581 /* day05-blog */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "day05-blog"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -478,6 +502,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D046996E240D02BF00EA720A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0469979240D1D7F00EA720A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D0542C382407F8C800BA3581 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -559,6 +597,8 @@
 				D02B028C240A7F0B00309ECA /* day07-string */,
 				D08303AA240BE2BA000FEB9D /* day07-mutable-string */,
 				D08303B5240BF4CF000FEB9D /* day08 */,
+				D0469972240D02BF00EA720A /* day08-dictionary */,
+				D046997D240D1D7F00EA720A /* day08-common */,
 				D0118BC123FE799800E8E6DE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -585,6 +625,8 @@
 				D02B028B240A7F0B00309ECA /* day07-string */,
 				D08303A9240BE2BA000FEB9D /* day07-mutable-string */,
 				D08303B4240BF4CF000FEB9D /* day08 */,
+				D0469971240D02BF00EA720A /* day08-dictionary */,
+				D046997C240D1D7F00EA720A /* day08-common */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -742,6 +784,22 @@
 				D02D46422409165100D3873F /* NSString+count.m */,
 			);
 			path = "day06-category";
+			sourceTree = "<group>";
+		};
+		D0469972240D02BF00EA720A /* day08-dictionary */ = {
+			isa = PBXGroup;
+			children = (
+				D0469973240D02BF00EA720A /* main.m */,
+			);
+			path = "day08-dictionary";
+			sourceTree = "<group>";
+		};
+		D046997D240D1D7F00EA720A /* day08-common */ = {
+			isa = PBXGroup;
+			children = (
+				D046997E240D1D7F00EA720A /* main.m */,
+			);
+			path = "day08-common";
 			sourceTree = "<group>";
 		};
 		D0542C452407F9AC00BA3581 /* day05-blog */ = {
@@ -1038,6 +1096,40 @@
 			productReference = D02D462F24090C4600D3873F /* day06-category */;
 			productType = "com.apple.product-type.tool";
 		};
+		D0469970240D02BF00EA720A /* day08-dictionary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0469977240D02BF00EA720A /* Build configuration list for PBXNativeTarget "day08-dictionary" */;
+			buildPhases = (
+				D046996D240D02BF00EA720A /* Sources */,
+				D046996E240D02BF00EA720A /* Frameworks */,
+				D046996F240D02BF00EA720A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "day08-dictionary";
+			productName = "day08-dictionary";
+			productReference = D0469971240D02BF00EA720A /* day08-dictionary */;
+			productType = "com.apple.product-type.tool";
+		};
+		D046997B240D1D7F00EA720A /* day08-common */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0469980240D1D7F00EA720A /* Build configuration list for PBXNativeTarget "day08-common" */;
+			buildPhases = (
+				D0469978240D1D7F00EA720A /* Sources */,
+				D0469979240D1D7F00EA720A /* Frameworks */,
+				D046997A240D1D7F00EA720A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "day08-common";
+			productName = "day08-common";
+			productReference = D046997C240D1D7F00EA720A /* day08-common */;
+			productType = "com.apple.product-type.tool";
+		};
 		D0542C3A2407F8C800BA3581 /* day05-blog */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D0542C3F2407F8C800BA3581 /* Build configuration list for PBXNativeTarget "day05-blog" */;
@@ -1216,6 +1308,12 @@
 					D02D462E24090C4600D3873F = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
+					D0469970240D02BF00EA720A = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					D046997B240D1D7F00EA720A = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
 					D0542C3A2407F8C800BA3581 = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
@@ -1274,6 +1372,8 @@
 				D02B028A240A7F0B00309ECA /* day07-string */,
 				D08303A8240BE2BA000FEB9D /* day07-mutable-string */,
 				D08303B3240BF4CF000FEB9D /* day08 */,
+				D0469970240D02BF00EA720A /* day08-dictionary */,
+				D046997B240D1D7F00EA720A /* day08-common */,
 			);
 		};
 /* End PBXProject section */
@@ -1394,6 +1494,22 @@
 				D02D463B24090CA900D3873F /* Person+sports.m in Sources */,
 				D02D463224090C4600D3873F /* main.m in Sources */,
 				D02D46432409165100D3873F /* NSString+count.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D046996D240D02BF00EA720A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0469974240D02BF00EA720A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0469978240D1D7F00EA720A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D046997F240D1D7F00EA720A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1771,6 +1887,38 @@
 			};
 			name = Release;
 		};
+		D0469975240D02BF00EA720A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D0469976240D02BF00EA720A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D0469981240D1D7F00EA720A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D0469982240D1D7F00EA720A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		D0542C402407F8C800BA3581 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2014,6 +2162,24 @@
 			buildConfigurations = (
 				D02D463424090C4600D3873F /* Debug */,
 				D02D463524090C4600D3873F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0469977240D02BF00EA720A /* Build configuration list for PBXNativeTarget "day08-dictionary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0469975240D02BF00EA720A /* Debug */,
+				D0469976240D02BF00EA720A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0469980240D1D7F00EA720A /* Build configuration list for PBXNativeTarget "day08-common" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0469981240D1D7F00EA720A /* Debug */,
+				D0469982240D1D7F00EA720A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

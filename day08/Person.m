@@ -9,5 +9,12 @@
 #import "Person.h"
 
 @implementation Person
+- (void)sayWithContent:(NSString*)content{
+    NSLog(@"%s, content: %@",__func__,content);
+}
 
+- (NSString *)description
+{
+    return [NSString stringWithFormat:@"person, age=%d", _age];
+}
 @end
